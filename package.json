@@ -6,7 +6,15 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "setup": "node setup.js"
+    "setup": "node setup.js",
+    "up:app": "docker-compose up -d app",
+    "down:app": "docker-compose down app",
+    "up:db": "docker-compose up -d db",
+    "down:db": "docker-compose down db",
+    "up:mail": "docker-compose up -d mail",
+    "down:mail": "docker-compose down mail",
+    "up:all": "docker-compose up -d app db mail",
+    "down:all": "docker-compose down"
   },
   "keywords": [],
   "author": "",
